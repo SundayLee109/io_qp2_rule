@@ -185,55 +185,55 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关
 | F | double            | 2   | Clear 2 Doubles | 2 | |
 | F | quad              | 1   | Clear a Quad | 1 | |
 | F | lines             | 6   | Clear 6 Lines | 1 | |
-| F | odouble           | 1   | Clear a Double \n using an O-Piece | 3 | |
+| F | odouble           | 1   | Clear a Double using an O-Piece | 3 | |
 | F | garbageclear      | 4   | Clear 4 Garbage Lines | 2 | |
-| F | szdouble          | 1   | Clear a Double \n using an S or Z-Piece | 3 | |
-| F | ljtriple          | 1   | Clear a Triple \n using an L or J-Piece | 3 | |
+| F | szdouble          | 1   | Clear a Double using an S or Z-Piece | 3 | |
+| F | ljtriple          | 1   | Clear a Triple using an L or J-Piece | 3 | |
 | E | tspinmini         | 1   | Perform a T-Spin Mini | 1 | |
 | E | tspinsingle       | 1   | Clear a T-Spin Single | 2 | |
 | E | tspindouble       | 1   | Clear a T-Spin Double | 2 | |
 | E | szspin            | 1   | Clear an S/Z-Spin | 1 | |
 | E | ljspin            | 1   | Clear an L/J-Spin | 1 | |
 | E | combo             | 5   | Perform a 5-Combo | 2 | |
-| E | iflat             | 2   | Clear 2 Lines using \n horizontal I-Pieces | 3 | |
+| E | iflat             | 2   | Clear 2 Lines using horizontal I-Pieces | 3 | |
 | E | tank              | 4   | Tank 4 Garbage Lines | 2 | |
 | E | cancel            | 4   | Cancel 4 Garbage Lines | 2 | |
 | D | double            | 4   | Clear 4 Doubles | 2 | |
-| D | spam              | 3   | Place 3 pieces in a row \n without moving or rotating | 4 | |
-| D | noclear           | 14  | Place 14 pieces in a row \n without clearing any lines | 4 | |
+| D | spam              | 3   | Place 3 pieces in a row without moving or rotating | 4 | |
+| D | noclear           | 14  | Place 14 pieces in a row without clearing any lines | 4 | |
 | D | send              | 6   | Send 6 Lines | 1 | |
 | D | pieces            | 20  | Place 20 pieces | 2 | |
-| D | szdouble          | 2   | Clear 2 Doubles \n using S or Z-Pieces | 3 | |
-| D | ljtriple          | 2   | Clear 2 Triples \n using L or J-Pieces | 3 | |
+| D | szdouble          | 2   | Clear 2 Doubles using S or Z-Pieces | 3 | |
+| D | ljtriple          | 2   | Clear 2 Triples using L or J-Pieces | 3 | |
 | D | ispinclear        | 1   | Clear an I-Spin | 1 | |
-| D | upperhalfquad     | 1   | Clear a Quad in the \n upper half of the board | 4 | |
+| D | upperhalfquad     | 1   | Clear a Quad in the upper half of the board | 4 | |
 | C | tspintriple       | 1   | Clear a T-Spin Triple | 2 | |
-| C | nohold            | 25  | Place 25 pieces \n without using Hold | 3 | nohold |
+| C | nohold            | 25  | Place 25 pieces without using Hold | 3 | nohold |
 | C | triple            | 3   | Clear 3 Triples | 2 | |
 | C | b2b               | 4   | Reach B2B x4 | 1 | |
-| C | quadbuckets       | 2   | Clear a Quad in \n 2 different columns | 3 | |
-| C | holdconsecutive   | 12  | Use Hold on \n 15 pieces in a row | 3 | nohold |
-| C | softdrop          | 10  | Place 10 pieces without \n releasing Soft Drop | 4 | |
-| C | top3rows          | 3   | Have part of your stack in \n the top 3 rows for 3 seconds | 4 | |
-| C | linesnoti         | 10  | Clear 10 Lines without \n clearing with T or I-pieces | 4 | |
+| C | quadbuckets       | 2   | Clear a Quad in 2 different columns | 3 | |
+| C | holdconsecutive   | 12  | Use Hold on 15 pieces in a row | 3 | nohold |
+| C | softdrop          | 10  | Place 10 pieces without releasing Soft Drop | 4 | |
+| C | top3rows          | 3   | Have part of your stack in the top 3 rows for 3 seconds | 4 | |
+| C | linesnoti         | 10  | Clear 10 Lines without clearing with T or I-pieces | 4 | |
 | C | szspintriple      | 1   | Clear an S/Z-Spin Triple | 2 | |
-| C | odoubleconsecutive| 2   | Clear 2 Doubles consecutively \n using two O-Pieces | 4 | |
+| C | odoubleconsecutive| 2   | Clear 2 Doubles consecutively using two O-Pieces | 4 | |
 | C | tspinminiclear    | 4   | Clear 4 T-Spin Minis | 2 | |
-| B | oclear            | 6   | Clear 6 Lines \n using O-Pieces | 3 | |
-| B | spinbuckets       | 3   | Clear Spin-Clears \n with 3 different pieces | 3 | |
+| B | oclear            | 6   | Clear 6 Lines using O-Pieces | 3 | |
+| B | spinbuckets       | 3   | Clear Spin-Clears with 3 different pieces | 3 | |
 | B | quad              | 4   | Clear 4 Quads | 1 | |
-| B | spam              | 5   | Place 5 pieces in a row \n without moving or rotating | 4 | |
+| B | spam              | 5   | Place 5 pieces in a row without moving or rotating | 4 | |
 | B | send              | 18  | Send 18 Lines | 1 | |
 | B | ljspintriple      | 1   | Clear an L/J-Spin Triple | 2 | |
 | B | quadconsecutive   | 2   | Clear 2 Quads in a row | 2 | |
-| B | singlesonly       | 8   | Clear 8 Singles without doing \n other clears or using Hold | 4 | |
-| B | nogarbage         | 4   | Have no Garbage Lines on \n your board for 4 seconds | 4 | |
+| B | singlesonly       | 8   | Clear 8 Singles without doing other clears or using Hold | 4 | |
+| B | nogarbage         | 4   | Have no Garbage Lines on your board for 4 seconds | 4 | |
 | B | rotate            | 100 | Rotate 100 times | 2 | |
-| B | nocancel          | 8   | Don't cancel any \n garbage for 8 seconds | 3 | |
+| B | nocancel          | 8   | Don't cancel any garbage for 8 seconds | 3 | |
 | A | combo             | 7   | Perform a 7-Combo | 2 | |
 | A | ispindouble       | 1   | Clear an I-Spin Double | 2 | |
-| A | szspinconsecutive | 2   | Clear two S/Z-Spin \n Doubles consecutively | 3 | |
-| A | ljspinconsecutive | 2   | Clear two L/J-Spin \n Doubles consecutively | 3 | |
+| A | szspinconsecutive | 2   | Clear two S/Z-Spin Doubles consecutively | 3 | |
+| A | ljspinconsecutive | 2   | Clear two L/J-Spin Doubles consecutively | 3 | |
 | A | colorclear        | 1   | Perform a Color Clear | 2 | |
 | A | lines             | 40  | Clear 40 Lines | 1 | |
 
