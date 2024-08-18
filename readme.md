@@ -37,17 +37,17 @@
 
 | 级别 | 倍率 | 颜色 | 图案 | 速通模式备注 |
 | - | - | - | - | - |
-| 1 | 0 | 无 | 一个进度条 | |
-| 2 | 0.25 | 红 | 下面加一个三角形 | |
-| 3 | 0.5 | 橙 | 三角形长出翅膀 | |
-| 4 | 0.75 | 黄绿 | 翅膀变大 | |
-| 5 | 1 | 蓝 | 翅膀变大加底座 | |
-| 6 | 1.25 | 紫 | 翅膀伸出进度条长度 | |
-| 7 | 1.5 | 亮橙 | 翅膀更多细节 | 不退出速通模式的最低等级 |
-| 8 | 1.75 | 青绿 | 进度条上面加一对平行四边形 | 1/2层到此触发 |
-| 9 | 2 | 青蓝 | 两对平行四边形 | 3/4层到此触发 |
-| 10 | 2.25 | 亮紫 | 三对平行四边形 | 5层到此触发 |
-| 11 | 2.5 | 白 | 加一对小三角 | |
+| 1 | 0.25 | 无 | 一个进度条 | |
+| 2 | 0.5 | 红 | 下面加一个三角形 | |
+| 3 | 0.75 | 橙 | 三角形长出翅膀 | |
+| 4 | 1 | 黄绿 | 翅膀变大 | |
+| 5 | 1.25 | 蓝 | 翅膀变大加底座 | |
+| 6 | 1.5 | 紫 | 翅膀伸出进度条长度 | |
+| 7 | 1.75 | 亮橙 | 翅膀更多细节 | 不退出速通模式的最低等级 |
+| 8 | 2 | 青绿 | 进度条上面加一对平行四边形 | 1/2层到此触发 |
+| 9 | 2.25 | 青蓝 | 两对平行四边形 | 3/4层到此触发 |
+| 10 | 2.5 | 亮紫 | 三对平行四边形 | 5层到此触发 |
+| 11+ | 2.75+ | 白 | 加一对小三角 | |
 
 ### 速通模式（Hyperspeed）
 
@@ -93,7 +93,7 @@
 
 此模式使用All-Mini规则，所有的块的spin都是`特殊消除`，可以增加B2B计数 （其中T使用三角判定，其他块使用不可移动判定且只会计为Mini，伤害计算同普通消除一致，消123打012）
 
-全消攻击为5，且也算`特殊消除`
+全消攻击为3，且也算`特殊消除`，且若為非特殊消除的話（bug）B2B计数+2
 
 从第二个`特殊消除`开始会累计b2b计数，同时提供1的额外伤害 （不再像老TL一样慢慢增加）
 
@@ -169,7 +169,7 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关
 
 但是代价是每当玩家消除时（准确来说是锁定一块时场地左上角冒出的文本，除了消除还有无消行spin），如果提示文本完全一致，那么场地底部会出现一行特殊的实心垃圾行作为惩罚，上面随机位置写了一个倒计时数字为`当前层数+5`，当玩家做一个没有惩罚的消除时-1，归零时变为一行随机位置的单洞普通垃圾行，洞和数字的位置一致
 
-这是唯一一个玩家水平足够后能提供很大正面效果而的mod
+这是唯一一个玩家水平足够后能提供很大正面效果的mod
 
 ### 双人 （塔罗牌：恋人 The Lovers）
 
@@ -185,17 +185,17 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关
 | F | double            | 2   | Clear 2 Doubles | 2 | |
 | F | quad              | 1   | Clear a Quad | 1 | |
 | F | lines             | 6   | Clear 6 Lines | 1 | |
-| F | odouble           | 1   | Clear a Double \n using an O-Piece | 3 | |
+| F | odouble           | 1   | Clear a Double using an O-Piece | 3 | |
 | F | garbageclear      | 4   | Clear 4 Garbage Lines | 2 | |
-| F | szdouble          | 1   | Clear a Double \n using an S or Z-Piece | 3 | |
-| F | ljtriple          | 1   | Clear a Triple \n using an L or J-Piece | 3 | |
+| F | szdouble          | 1   | Clear a Double using an S or Z-Piece | 3 | |
+| F | ljtriple          | 1   | Clear a Triple using an L or J-Piece | 3 | |
 | E | tspinmini         | 1   | Perform a T-Spin Mini | 1 | |
 | E | tspinsingle       | 1   | Clear a T-Spin Single | 2 | |
 | E | tspindouble       | 1   | Clear a T-Spin Double | 2 | |
 | E | szspin            | 1   | Clear an S/Z-Spin | 1 | |
 | E | ljspin            | 1   | Clear an L/J-Spin | 1 | |
 | E | combo             | 5   | Perform a 5-Combo | 2 | |
-| E | iflat             | 2   | Clear 2 Lines using \n horizontal I-Pieces | 3 | |
+| E | iflat             | 2   | Clear 2 Lines using horizontal I-Pieces | 3 | |
 | E | tank              | 4   | Tank 4 Garbage Lines | 2 | |
 | E | cancel            | 4   | Cancel 4 Garbage Lines | 2 | |
 | D | double            | 4   | Clear 4 Doubles | 2 | |
@@ -203,39 +203,41 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关
 | D | noclear           | 14  | Place 14 pieces in a row \n without clearing any lines | 4 | |
 | D | send              | 6   | Send 6 Lines | 1 | |
 | D | pieces            | 20  | Place 20 pieces | 2 | |
-| D | szdouble          | 2   | Clear 2 Doubles \n using S or Z-Pieces | 3 | |
-| D | ljtriple          | 2   | Clear 2 Triples \n using L or J-Pieces | 3 | |
+| D | szdouble          | 2   | Clear 2 Doubles using S or Z-Pieces | 3 | |
+| D | ljtriple          | 2   | Clear 2 Triples using L or J-Pieces | 3 | |
 | D | ispinclear        | 1   | Clear an I-Spin | 1 | |
-| D | upperhalfquad     | 1   | Clear a Quad in the \n upper half of the board | 4 | |
+| D | upperhalfquad     | 1   | Clear a Quad in the upper half of the board | 4 | |
 | C | tspintriple       | 1   | Clear a T-Spin Triple | 2 | |
-| C | nohold            | 25  | Place 25 pieces \n without using Hold | 3 | nohold |
+| C | nohold            | 25  | Place 25 pieces without using Hold | 3 | nohold |
 | C | triple            | 3   | Clear 3 Triples | 2 | |
 | C | b2b               | 4   | Reach B2B x4 | 1 | |
-| C | quadbuckets       | 2   | Clear a Quad in \n 2 different columns | 3 | |
+| C | quadbuckets       | 2   | Clear a Quad in 2 different columns | 3 | |
 | C | holdconsecutive   | 12  | Use Hold on \n 15 pieces in a row | 3 | nohold |
-| C | softdrop          | 10  | Place 10 pieces without \n releasing Soft Drop | 4 | |
-| C | top3rows          | 3   | Have part of your stack in \n the top 3 rows for 3 seconds | 4 | |
-| C | linesnoti         | 10  | Clear 10 Lines without \n clearing with T or I-pieces | 4 | |
+| C | softdrop          | 10  | Place 10 pieces without releasing Soft Drop | 4 | |
+| C | top3rows          | 3   | Have part of your stack in the top 3 rows for 3 seconds | 4 | |
+| C | linesnoti         | 10  | Clear 10 Lines without clearing with T or I-pieces | 4 | |
 | C | szspintriple      | 1   | Clear an S/Z-Spin Triple | 2 | |
-| C | odoubleconsecutive| 2   | Clear 2 Doubles consecutively \n using two O-Pieces | 4 | |
+| C | odoubleconsecutive| 2   | Clear 2 Doubles consecutively using two O-Pieces | 4 | |
 | C | tspinminiclear    | 4   | Clear 4 T-Spin Minis | 2 | |
 | B | oclear            | 6   | Clear 6 Lines \n using O-Pieces | 3 | |
-| B | spinbuckets       | 3   | Clear Spin-Clears \n with 3 different pieces | 3 | |
+| B | spinbuckets       | 3   | Clear Spin-Clears with 3 different pieces | 3 | |
 | B | quad              | 4   | Clear 4 Quads | 1 | |
 | B | spam              | 5   | Place 5 pieces in a row \n without moving or rotating | 4 | |
 | B | send              | 18  | Send 18 Lines | 1 | |
 | B | ljspintriple      | 1   | Clear an L/J-Spin Triple | 2 | |
 | B | quadconsecutive   | 2   | Clear 2 Quads in a row | 2 | |
 | B | singlesonly       | 8   | Clear 8 Singles without doing \n other clears or using Hold | 4 | |
-| B | nogarbage         | 4   | Have no Garbage Lines on \n your board for 4 seconds | 4 | |
+| B | nogarbage         | 4   | Have no Garbage Lines on your board for 4 seconds | 4 | |
 | B | rotate            | 100 | Rotate 100 times | 2 | |
-| B | nocancel          | 8   | Don't cancel any \n garbage for 8 seconds | 3 | |
+| B | nocancel          | 8   | Don't cancel any garbage for 8 seconds | 3 | |
 | A | combo             | 7   | Perform a 7-Combo | 2 | |
 | A | ispindouble       | 1   | Clear an I-Spin Double | 2 | |
-| A | szspinconsecutive | 2   | Clear two S/Z-Spin \n Doubles consecutively | 3 | |
-| A | ljspinconsecutive | 2   | Clear two L/J-Spin \n Doubles consecutively | 3 | |
+| A | szspinconsecutive | 2   | Clear two S/Z-Spin Doubles consecutively | 3 | |
+| A | ljspinconsecutive | 2   | Clear two L/J-Spin Doubles consecutively | 3 | |
 | A | colorclear        | 1   | Perform a Color Clear | 2 | |
 | A | lines             | 40  | Clear 40 Lines | 1 | |
+
+注：Color Clear指消行后场内只剩垃圾行（即只消1行的HPC的条件
 
 复活时要做什么样的任务取决于`复活难度分=层数+已复活次数*2`
 
@@ -245,7 +247,7 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关
 |  2 | F×2     |
 |  3 | F×3     |
 |  4 | F×2 E×1 |
-|  5 | F×1 E×2 |
+|  5 | F,×1 E×2 |
 |  6 | E×3     |
 |  7 | E×2 D×1 |
 |  8 | E×1 D×2 |
